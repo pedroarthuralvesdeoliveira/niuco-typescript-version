@@ -3,6 +3,7 @@
 ## Descrição
 
 Esta aplicação integra-se com uma API mock, coleta dados de usuários, processa e exibe essas informações conforme as regras de negócio especificadas.
+Este projeto é um console application. 
 
 ## Requisitos
 
