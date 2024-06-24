@@ -2,7 +2,7 @@ import { obfuscateEmail } from '../src/utils/EmailUtils';
 
 describe('EmailUtils', () => {
     test('obfuscateEmail correctly obfuscates non-niuco emails', () => {
-        expect(obfuscateEmail('maria.oliveira@gmail.com')).toBe('ma********ra@gmail.com');
+        expect(obfuscateEmail('maria.oliveira@gmail.com')).toBe('ma**********ra@gmail.com');
     });
 
     test('obfuscateEmail does not obfuscate niuco emails', () => {

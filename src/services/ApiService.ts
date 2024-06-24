@@ -19,11 +19,12 @@ export class ApiService {
 
     static transformUser(user: any): User {
         const isActive = user.status !== 'disabled';
+        const lastActivityDate = new Date(user.last_activity * 1000).toISOString();
         return {
             id: user.id,
             name: user.name,
             email: obfuscateEmail(user.email),
-            lastActivity: new Date(user.last_activity * 1000).toISOString(),
+            lastActivity: lastActivityDate,
             isPaying: isActive && (user.role === 'admin' || user.role === 'editor'),
             isActive: isActive,
         };
