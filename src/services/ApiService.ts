@@ -2,8 +2,7 @@ import axios from 'axios';
 import { User } from '../models/User';
 import { obfuscateEmail } from '../utils/EmailUtils';
 import { Logger } from '../logs/logger';
-
-const API_URL = process.env.API_URL || 'http://0.0.0.0:8080';
+import { API_URL } from '../config/config'
 
 export class ApiService {
     static async fetchUsers(): Promise<User[]> {
