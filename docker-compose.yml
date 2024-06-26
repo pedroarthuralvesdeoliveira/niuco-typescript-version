@@ -5,4 +5,14 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - API_URL=http://0.0.0.0:8080
+      - API_URL=http://json-server:8080
+    depends_on:
+      - json-server
+  json-server:
+    image: vimagick/json-server
+    command: -h 0.0.0.0 -p 8080 -w /config/db.json
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../backend-challenge/config:/config
+    restart: always
