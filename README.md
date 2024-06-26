@@ -34,17 +34,26 @@ cd config
 json-server --watch db.json
 ```
 
-4. Inicie a aplicação: 
+4. Inicie a aplicação: sem docker
 ```bash
 npm start
 ```
+5. Ou inicie a aplicação com docker: 
+```
+docker-compose up -d
+```
 
-## Testes
+Testes
 
 Para rodar os testes, execute: 
 ```bash
 npm test
 ```
+Para rodar os testes com docker, execute: 
+```bash
+docker-compose run app npm test
+```
+
 ## Configuração
 Crie um arquivo .env na raiz do projeto com a URL da API:
 ```bash
