@@ -20,7 +20,7 @@ Este projeto é um console application.
 
 ### Rodando Localmente
 
-1. Clone o repositório: [niuco](git@github.com:pedroarthuralvesdeoliveira/niuco-typescript-version.git)
+1. Clone o repositório: ``` git clone git@github.com:pedroarthuralvesdeoliveira/niuco-typescript-version.git ```
 2. Navegue até o diretório do projeto e instale as dependências: cd niuco-typescript-version
 
 ```bash
