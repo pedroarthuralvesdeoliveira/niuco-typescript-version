@@ -57,5 +57,6 @@ docker-compose run app npm test
 ## Configuração
 Crie um arquivo .env na raiz do projeto com a URL da API:
 ```bash
-API_URL=http://0.0.0.0:8080
+API_URL=http://json-server:8080
 ```
+
